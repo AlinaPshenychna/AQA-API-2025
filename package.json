@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
-    "api": "node HW_api_axios_14/api.js"
+    "api": "node HW_axios_14/api.js"
   },
   "author": "",
   "license": "ISC",
