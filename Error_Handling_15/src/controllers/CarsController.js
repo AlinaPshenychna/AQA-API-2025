@@ -1,21 +1,35 @@
 import BaseController from "./BaseController.js";
 
-
 export default class CarsController extends BaseController {
+  getBrands() {
+    return this.client.get("cars/brands");
+  }
+  getBrandsByID(id) {
+    return this.client.get(`cars/brands/${id}`);
+  }
 
-    getBrands(){
-        return this.client.get('/api/cars/brands');
-    }
+  getModels() {
+    return this.client.get("cars/models");
+  }
+  getModelsByID(id) {
+    return this.client.get(`cars/models/${id}`);
+  }
+  getCars() {
+    return this.client.get("cars");
+  }
 
-    getModels(){
-        return this.client.get('/api/cars/models');
-    }
+  createCar(carData) {
+    return this.client.post("cars", carData);
+  }
 
-    createCar(carData){
-        return this.client.post('/api/cars', carData );
-    }
+  getCarById(id) {
+    return this.client.get(`cars/${id}`);
+  }
+  updateCarsByID(id, upadeteCarData) {
+    return this.client.put(`cars/${id}`, upadeteCarData);
+  }
 
-    getCarById(id){
-        return this.client.get(`/api/cars/${id}`);
-    }
+  deleteCarsByID(id) {
+    return this.client.delete(`cars/${id}`);
+  }
 }
