@@ -5,13 +5,19 @@
   "main": "task2.js",
   "type": "module",
   "scripts": {
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
-    "api": "node HW_api_axios_14/api.js"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@faker-js/faker": "^10.1.0",
     "axios": "^1.12.2",
-    "jest": "^30.2.0"
+    "axios-cookiejar-support": "^6.0.4",
+    "jest": "^30.2.0",
+    "tough-cookie": "^5.1.2"
+  },
+  "devDependencies": {
+    "jest-html-reporters": "^3.1.7"
   }
+  
 }
