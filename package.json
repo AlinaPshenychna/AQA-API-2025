@@ -5,7 +5,7 @@
   "main": "task2.js",
   "type": "module",
   "scripts": {
-"test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand"
   },
   "author": "",
   "license": "ISC",
@@ -19,5 +19,5 @@
   "devDependencies": {
     "jest-html-reporters": "^3.1.7"
   }
+  
 }
-
